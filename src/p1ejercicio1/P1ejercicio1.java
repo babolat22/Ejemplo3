@@ -5,8 +5,8 @@
  */
 package p1ejercicio1;
 
-import static java.lang.System.in;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,12 +20,12 @@ public class P1ejercicio1 {
     public static void main(String[] args) {
         int n1, n2, n3;
         System.out.println("Ingrese 3 numeros:");
-        Scanner sc = new Scanner(System.in);
-        n1 = sc.nextInt();
+        n1= Integer.parseInt(JOptionPane.showInputDialog(null, "ingrese: "));  // con dialogo
+        Scanner sc = new Scanner(System.in);     // por consola
+     // n1 = sc.nextInt();
         n2 = sc.nextInt();
         n3 = sc.nextInt();
-        if (n1<
-                n2 && n3<n2) 
+        if (n1<n2 && n3<n2) 
             System.out.println("El matyor es: "+ n2);
         else
             if(n2<n1 && n3<n1)
